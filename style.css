@@ -1,0 +1,87 @@
+@charset "UTF-8";
+/* CSS Document */
+h1{ font-family: "times new roman", times, serif;}
+
+p {
+  font-family: Arial, Helvetica, sans-serif;
+}
+body {
+  background-color:darkred
+; 
+color:black;
+background-image :url}
+#nav{	
+background-color:aquamarine
+padding 15px 15px 15px 15px;
+	text-align:left;
+}
+#header { 
+background-image: url(james.jpg);
+	height:1px;
+	background-repeat: no-repeat;
+    
+    /* 1. Forces the image to stretch and cover the whole area without distorting */
+    background-size: cover; 
+    
+    /* 2. Keeps the image centered as it scales */
+    background-position: center; 
+    
+    /* 3. CRITICAL: Give the container a size so the image can actually show up */
+    min-height: 50vh; /* '100vh' forces it to take up the full height of the screen */
+    width: 100%;       /* Forces it to take up the full width */
+	
+}
+#header {
+	background-color: white
+}
+/* unvisited link */
+a:link {
+  color: white;
+}
+
+/* visited link */
+a:visited {
+  color: blue;
+}
+
+/* mouse over link */
+a:hover {
+  color: yellow;
+}
+
+/* selected link */
+a:active {
+  color: blue;
+}
+
+#header {
+	background-color:#F6FFE6;
+	text-align: center;
+	color:white;
+	font-size: 20px;
+}
+.onethirdcolumn {
+    background-color: #f1ead8;
+    margin: 5px;
+    padding: 5px;
+	width: 31.3%;
+	float: left;}
+/* This makes all the regular paragraphs and lists bigger */
+p, li, p2 {
+    font-size: 18px; 
+    line-height: 1.6; /* Adds comfortable spacing between lines of text */
+}
+
+/* This makes your main header name "Michael Trujillo" bigger */
+#header h1 {
+    font-size: 42px;
+}
+
+/* This makes your section headings bigger */
+h2 {
+    font-size: 28px;
+}
+
+h3, h4 {
+    font-size: 24px;
+}
