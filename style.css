@@ -6,47 +6,38 @@ p {
   font-family: Arial, Helvetica, sans-serif;
 }
 body {
-  background-color:darkred
+  background-color:cornflowerblue
 ; 
 color:black;
 background-image :url}
-#nav{	
-background-color:aquamarine
-padding 15px 15px 15px 15px;
-	text-align:left;
-}
 #header { 
 background-image: url(james.jpg);
 	height:1px;
 	background-repeat: no-repeat;
-    
-    /* 1. Forces the image to stretch and cover the whole area without distorting */
     background-size: cover; 
-    
-    /* 2. Keeps the image centered as it scales */
     background-position: center; 
-    
-    /* 3. CRITICAL: Give the container a size so the image can actually show up */
-    min-height: 50vh; /* '100vh' forces it to take up the full height of the screen */
-    width: 100%;       /* Forces it to take up the full width */
-	
+    min-height: 50vh;
+    width: 100%;
 }
 #header {
-	background-color: white
+	background-color:blue;
 }
 /* unvisited link */
 a:link {
   color: white;
+	padding: 10px;
+	border-radius:5px;
+	
 }
 
 /* visited link */
 a:visited {
-  color: blue;
+  color: blue;	
 }
 
 /* mouse over link */
 a:hover {
-  color: yellow;
+  color: yellow;	
 }
 
 /* selected link */
@@ -57,31 +48,48 @@ a:active {
 #header {
 	background-color:#F6FFE6;
 	text-align: center;
-	color:white;
-	font-size: 20px;
+	color:lightblue;
+	font-size: 15px;
+	background-repeat:repeat;
 }
 .onethirdcolumn {
-    background-color: #f1ead8;
-    margin: 5px;
-    padding: 5px;
+    background-color:cornflowerblue;
+    margin: 4px;
+    padding: 4px;
 	width: 31.3%;
 	float: left;}
-/* This makes all the regular paragraphs and lists bigger */
 p, li, p2 {
     font-size: 18px; 
-    line-height: 1.6; /* Adds comfortable spacing between lines of text */
+    line-height:1.5; /* Adds comfortable spacing between lines of text */
 }
 
-/* This makes your main header name "Michael Trujillo" bigger */
+
 #header h1 {
-    font-size: 42px;
+    font-size: 100px;
 }
-
-/* This makes your section headings bigger */
-h2 {
+h3,h2,h4 {
     font-size: 28px;
+    padding: 20px 25px 15px 25px;
+    background-position: left;
+	
 }
-
-h3, h4 {
-    font-size: 24px;
+ #content {background-color: lightblue;
+	border-spacing: 2px;
+	padding: 15px 15px 15px 15px;
+	text-align: left;
+	display:flow-root;
+}
+#nav {
+	background-color: cornflowerblue;
+	padding: 15px 15px 15px 15px;
+	text-align: center;	
+}
+a:link, a:visited {
+  background-color: white;
+  color: black;
+  border: 2px solid #13E3D2;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
 }
