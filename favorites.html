@@ -1,43 +1,203 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title> All About Michael Trujillo</title>
-<link rel="stylesheet" href="style.css">
+	
+   
+    <title>My Favorites</title>
+	<link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color:cornflowerblue;
+            color: #333;
+        }
+        .intro-section {
+            max-width: 800px;
+            margin-bottom: 30px;
+        }
+        h1 { color: black; }
+        h2 { color:black; border-bottom: 2px solid #ddd; padding-bottom: 5px; margin-top: 40px; }
+        
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 15px;
+            margin-bottom: 30px;
+        }
+        .gallery-item {
+            background: #fff;
+            border: 1px solid #ddd;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+            text-align: center;
+        }
+        .gallery-item img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover; 
+            cursor: pointer;
+            transition: 0.3s;
+            border-radius: 3px;
+        }
+        .gallery-item img:hover {
+            opacity: 0.8;
+        }
+        .caption {
+            font-size: 0.9em;
+            margin-top: 8px;
+            color: #555;
+        }
+        .external-link {
+            display: inline-block;
+            margin-top: 5px;
+            color: #2980b9;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .external-link:hover { text-decoration: underline; }
 
-	<a href="index.html">Home</a> <a href="favorites.html"> -Favorites</a> <a href="contact.html">- Contact</a>
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            padding-top: 50px;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.9);
+        }
+        .modal-content {
+            position: relative;
+            background-color: #fefefe;
+            margin: auto;
+            padding: 0;
+            width: 90%;
+            max-width: 700px;
+            border-radius: 5px;
+            animation: zoom 0.6s;
+        }
+        @keyframes zoom {
+            from {transform:scale(0)} to {transform:scale(1)}
+        }
+        .modal-img {
+            width: 100%;
+            height: auto;
+            display: block;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+        }
+        .close {
+            position: absolute;
+            top: -40px;
+            right: 0;
+            color: #fff;
+            font-size: 35px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        .close:hover { color: #bbb; }
+        .modal-caption {
+            padding: 15px;
+            text-align: center;
+            color: #333;
+            font-size: 1.1em;
+            background: #fff;
+            border-bottom-left-radius: 5px;
+            border-bottom-right-radius: 5px;
+        }
+    </style>
 </head>
 <body>
-	<div>&nbsp;
-	</div>
-<div id="header">
-  <h1> Michael Trujillo</h1>
-</div>
+    <div class="intro-section">
+        <h1>Welcome to My Favorites</h1>
+        <p>Explore a collection of my favorite things, organized into distinct areas of interest. From Everyday tools to my favorite activites. These items reflect what brings inspiration and utility to my life. Click any image to view it up close and discover why it earned a spot on this list!</p>
+    </div>
 <div id="nav">
-<h2> Hobbies and interest </h2>
-<p> Some hobbies I have are playing video games with my friends, hanging out with my friends, and going to the gym. another thing is hanging out with my family as much as I can. I try to hangout with my grandparents every other weekend. Im interested in LeBron James and his entire career.</p>
-<img src="https://mediaproxy.tvtropes.org/width/1200/https://static.tvtropes.org/pmwiki/pub/images/img_3658_2.jpeg" alt="fortnite" width="250px"style="float:farright;">
-</div>
-<div id="content">
-<h2>Favorite stuff</h2> 
-<p2> My favorite music artist is Brent Faiyaz and favorite genre is R&amp;B. My favorite song is called "Come Over" by Nipsey Hussle. My favorite movie TMNT because they're so funny and hilarious and because WE love pizza. My favorite Sport is baseball and my team is the dodgers. I also love the lakers and&nbsp; GOAT is LeBron James.</p2>
-<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStx9fQlij57i_TMYiaLo4a7MIbNJ7I23IFUywbaicgHw&s=10" alt="LeBron is the GOAT" width="200x" height="100" style="float: right;"> 
-</div>
-<div>
-<h3> Places I want to visit</h3> 
-<p> I would like to visit Tokyo,Japan because I can go shopping in shibuya and buy stuff for myself and for my family and friends. Id also go there to explore the beautiful views around Japan. Another place I would like to go to is Italia because they have such beautiful homes, the country side and have clear water. I also want to see rome and take a picture with the leaning tower of pisa.</p>
-<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0V5xL345_pPxVJEVSwlSQXx4I4cME2wqqjND-3QeMkg&s=10" alt=" Shibuya crossing is cool" width="220px" style="float: farright;"> 
+<a href="index.html">Home</a>  <a href="about.html"> About</a>  <a href="favorites.html"> -Favorites</a> <a href="contact.html">- Contact</a> 
 	</div>
-	<div>
-<h4> Favorite food</h4>
-<ul>
-  <li>Chicken Alredo</li>
-  <li>Carne asada</li>
-  <li>Panera white cheddar mac and cheese</li>
-</ul>
+
+    <h2>Category 1: Technology &  Gadgets</h2>
+    <div class="gallery-grid">
+        <div class="gallery-item">
+            <img src="macmini.jpeg" alt="A mac computer" >
+            <p class="caption"><strong>My Computer</strong> - Essential for web design, programming, and managing school projects.</p>
+        </div>
+        <div class="gallery-item">
+            <img src="DW.png" alt="Adobe Dreamweaver user interface workspace" >
+            <p class="caption"><strong>Dreamweaver</strong> - Excellent for real-time visual code editing.</p>
+            <a href="https://adobe.com" target="_blank" class="external-link" rel="noopener">Visit Adobe Official Site</a>
+        </div>
+        <div class="gallery-item">
+            <img src="Airpods.jpeg" alt="Ear Buds" >
+            <p class="caption"><strong>AirPods</strong> - Keeps me focused while studying in busy environments.</p>
+        </div>
+    </div>
+
+    <h2>Category 2: Activities & Hobbies</h2>
+    <div class="gallery-grid">
+        <div class="gallery-item">
+            <img src="LeGoat.jpg" alt="LeBron James" >
+            <p class="caption"><strong>Reading</strong> - Watching LeBron James whenever I can on TV</p>
+        </div>
+        
+        <div class="gallery-item">
+            <img src="IMG_1864.jpeg" alt="A Planet Fitness Gym">
+            <p class="caption">  <strong>GYM</strong> - Going to the gym to get healthier and stronger</p>
+        </div>
+     
+        <div class="gallery-item">
+            <img src="IMG_3071.jpeg" alt="A cruise along the beach" >
+            <p class="caption"><strong>Views</strong> - I love going on car rides with friends and family seeing a great view.</p>
+        </div>
+    </div>
+
+    <h2>Category 3: Travel Destinations</h2>
+    <div class="gallery-grid">
+        
+        <div class="gallery-item">
+            <img src="images/national-parks.jpg" alt="Beautiful nature">
+            <p class="caption"><strong>Yosemite</strong> - Breathtaking valleys and historic giant granite peaks.</p>
+        </div>
+        <div class="gallery-item">
+            <img src="images/tokyo.jpg" alt="The vibrant neon signs of Tokyo streets at twilight" >
+            <p class="caption"><strong>Tokyo, Japan</strong> - A beautiful combination of history and modern tech infrastructure.</p>
+            <a href="https://gotokyo.org" target="_blank" class="external-link" rel="noopener">Explore Tokyo Tourism Board</a>
+        </div>
+        <!-- Item 9 -->
+        <div class="gallery-item">
+            <img src="LakeComo.webp" alt="Tourist spot on a lake in Italy" >
+            <p class="caption"><strong>Villa del Balbianello in Lenno on Lake Como</strong> - Want to go here because of Star Wars when Anakin went with Padme</p>
+        </div>
+    </div>
+    <div id="customLightbox" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeLightbox()">&times;</span>
+            <img id="lightboxImg" class="modal-img" src="" alt="">
+            <div id="lightboxCaption" class="modal-caption"></div>
+        </div>
+    </div>
+
+    <script>
+        function openLightbox(imageSrc, captionText) {
+            var modal = document.getElementById("myslides");
+            var modalImg = document.getElementById("lightboxImg");
+            var caption = document.getElementById("lightboxCaption");
+            
+            modal.style.display = "block";
+            modalImg.src = imageSrc;
+            modalImg.alt = captionText; 
+            caption.innerHTML = captionText;
+        }
+
+        function closeModal() {
+            document.getElementById("customLightbox").style.display = "none";
+        }
+        window.onclick = function(event) {
+            var modal = document.getElementById("customLightbox");
 </div>
-	<div style="clear: both;"
-<div id="footer">
-copyright &copy; 2026 Michael Trujillo
-	</div>
 </body>
 </html>
